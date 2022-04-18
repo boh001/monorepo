@@ -7,12 +7,18 @@
   "scripts": {
     "dev": "lerna run dev --parallel",
     "build": "lerna run build --parallel",
-    "prettier": "lerna run prettier --parallel"
+    "prettier": "lerna run prettier --parallel",
+    "preview": "lerna run build && lerna run preview --parallel",
+    "clean": "lerna clean"
   },
   "devDependencies": {
+    "@originjs/vite-plugin-federation": "^1.1.4",
+    "@typescript-eslint/eslint-plugin": "^5.19.0",
+    "@typescript-eslint/parser": "^5.19.0",
     "eslint": "^8.13.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
     "prettier": "^2.6.2"
-  }
+  },
+  "dependencies": {}
 }
