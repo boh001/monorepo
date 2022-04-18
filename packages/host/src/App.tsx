@@ -1,13 +1,12 @@
+import * as React from 'react';
 // @ts-ignore
-import Home from "remote_app/App";
+const Remote = React.lazy(() => import('remote/App'));
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Home />
-      </header>
-    </div>
+    <React.Suspense fallback={'loading...'}>
+      <Remote />
+    </React.Suspense>
   );
 }
 

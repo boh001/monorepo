@@ -7,28 +7,26 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: "router-host",
-      filename: "remoteEntry.js",
+      name: "host",
       remotes: {
         "remote": {
           external: "http://localhost:8081/assets/remoteEntry.js",
-          format: 'var',
           from: 'vite'
         },
       },
-      shared: ["react", "react-dom"]
+      shared: {
+        "react": {
+          eager: true,
+          version: "18.0.0"
+        },
+        "react-dom": {
+          eager: true,
+          version: "18.0.0"
+        }
+      }
     })
   ],
   build: {
-    assetsInlineLimit: 40960,
-    target: 'esnext',
-    minify: true,
-    cssCodeSplit: false,
-    rollupOptions: {
-      output: {
-        format: 'system',
-        minifyInternalExports: false
-      }
-    }
+    target: "esnext"
   }
 })

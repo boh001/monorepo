@@ -1,11 +1,9 @@
+import { useState } from 'react';
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        home
-      </header>
-    </div>
-  );
+  const [count, setCount] = useState(0);
+
+  return <div className="App">remote-app</div>;
 }
 
 export default App;
