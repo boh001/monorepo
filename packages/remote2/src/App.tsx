@@ -1,8 +1,11 @@
+import { Link } from "react-router-dom";
+
 function App() {
 
   return (
     <div className="App">
-      remote-app 2
+      <div>remote-app2</div>
+      <Link to={"/remote"}>remote</Link>
     </div>
   )
 }
