@@ -1,4 +1,7 @@
 import { Link } from "react-router-dom";
+import { unstable_ClassNameGenerator as ClassNameGenerator } from "@mui/base/className";
+
+ClassNameGenerator.configure(componentName => `remote2-${componentName}`)
 
 function App() {
 

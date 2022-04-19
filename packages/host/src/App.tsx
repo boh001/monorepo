@@ -5,10 +5,13 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import { unstable_ClassNameGenerator as ClassNameGenerator } from "@mui/base/className";
 // @ts-ignore
 const Remote = React.lazy(() => import('remote/App'));
 // @ts-ignore
 const Remote2 = React.lazy(() => import('remote2/App'));
+
+ClassNameGenerator.configure(componentName => `container-${componentName}`)
 
 function App() {
   return (
