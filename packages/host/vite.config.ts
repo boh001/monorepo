@@ -13,20 +13,26 @@ export default defineConfig({
           external: "http://localhost:8081/assets/remoteEntry.js",
           from: 'vite'
         },
+        "remote2": {
+          external: "http://localhost:8082/assets/remoteEntry.js",
+          from: 'vite'
+        },
       },
       shared: {
         "react": {
-          eager: true,
           version: "18.0.0"
         },
         "react-dom": {
-          eager: true,
           version: "18.0.0"
+        },
+        "react-router-dom": {
+          version: "6.3.0"
         }
       }
     })
   ],
   build: {
-    target: "esnext"
+    target: "esnext",
+    minify: false
   }
 })

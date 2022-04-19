@@ -17,7 +17,7 @@ yarn add package_name -W -> 루트 패키지 설치
 yarn workspace package_name add package -> 특정 패키지에 설치
 
 ## vite + module-fedration plugin 사용할 듯
-`module-federation` 같은 경우 웹팩이 선두주자인데 그냥 웹팩 쓸까....
+`module-federation` 같은 경우 웹팩이 선두주자인거 같은데 그냥 웹팩 쓸까....
 
 `shared` 옵션에 별개 다 있음. 그거 이해를 못하겟는데 그것부터 이해해야될 듯
 
