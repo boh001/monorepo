@@ -1,47 +1,74 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
-import AccountCircle from '@mui/icons-material/AccountCircle';
-import { Link } from "react-router-dom";
+import HomeIcon from '@mui/icons-material/Home';
 
 export default function MenuAppBar() {
-  const [auth, setAuth] = React.useState(true);
+  const [auth, setAuth] = React.useState(false);
 
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
         <Toolbar>
-          <IconButton
-            size="large"
-            edge="start"
-            color="inherit"
-            aria-label="menu"
-            sx={{ mr: 2 }}
+          <Link
+            to={'/'}
+            style={{
+              color: 'inherit',
+              textDecoration: 'none',
+              fontSize: 'inherit',
+              marginRight: '10px'
+            }}
           >
-            <MenuIcon />
-          </IconButton>
+            <HomeIcon />
+          </Link>
           <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
             Container
           </Typography>
-          {auth && (
-            <div>
-              <Link to={'/myaccount'}>
-                <IconButton
-                  size="large"
-                  aria-label="account of current user"
-                  aria-controls="menu-appbar"
-                  aria-haspopup="true"
-                  color="inherit"
-                >
-                  <AccountCircle />
-                </IconButton>
+          <Box
+            sx={{
+              display: 'flex',
+              gap: '10px',
+            }}
+          >
+            {auth ? (
+              <Link
+                to={'/myaccount'}
+                style={{
+                  color: 'inherit',
+                  textDecoration: 'none',
+                  fontSize: 'inherit',
+                }}
+              >
+                myAccount
               </Link>
-            </div>
-          )}
+            ) : (
+              <>
+                <Link
+                  to={'/signup'}
+                  style={{
+                    color: 'inherit',
+                    textDecoration: 'none',
+                    fontSize: 'inherit',
+                  }}
+                >
+                  회원가입
+                </Link>
+                <Link
+                  to={'/signin'}
+                  style={{
+                    color: 'inherit',
+                    textDecoration: 'none',
+                    fontSize: 'inherit',
+                  }}
+                >
+                  로그인
+                </Link>
+              </>
+            )}
+          </Box>
         </Toolbar>
       </AppBar>
     </Box>
