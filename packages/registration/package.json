@@ -1,11 +1,11 @@
 {
-  "name": "remote",
+  "name": "registration",
   "private": true,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview --port 8081",
+    "preview": "vite preview --port 8083",
     "prettier": "prettier --write src"
   }
 }

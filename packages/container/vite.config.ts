@@ -7,14 +7,18 @@ export default defineConfig({
   plugins: [
     react(),
     federation({
-      name: "host",
+      name: "container",
       remotes: {
-        "remote": {
+        "landing": {
           external: "http://localhost:8081/assets/remoteEntry.js",
           from: 'vite'
         },
-        "remote2": {
+        "myAccount": {
           external: "http://localhost:8082/assets/remoteEntry.js",
+          from: 'vite'
+        },
+        "registration": {
+          external: "http://localhost:8083/assets/remoteEntry.js",
           from: 'vite'
         },
       },
