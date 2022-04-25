@@ -12,9 +12,6 @@ import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { createTheme, ThemeProvider } from '@mui/material/styles';
-import { unstable_ClassNameGenerator as ClassNameGenerator } from '@mui/base/className';
-
-ClassNameGenerator.configure((componentName) => `signUp-${componentName}`);
 
 function Copyright(props: any) {
   return (

@@ -19,7 +19,7 @@ export default function MenuAppBar() {
               color: 'inherit',
               textDecoration: 'none',
               fontSize: 'inherit',
-              marginRight: '10px'
+              marginRight: '10px',
             }}
           >
             <HomeIcon />

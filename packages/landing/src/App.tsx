@@ -1,7 +1,4 @@
 import { Link } from 'react-router-dom';
-import { unstable_ClassNameGenerator as ClassNameGenerator } from '@mui/base/className';
-
-ClassNameGenerator.configure((componentName) => `landing-${componentName}`);
 
 function App() {
   return (

@@ -16,10 +16,14 @@ yarn add package_name -W -> 루트 패키지 설치
 
 yarn workspace package_name add package -> 특정 패키지에 설치
 
+## Router
+## UI
+## WebSocket
+
 ## vite + module-fedration plugin 사용할 듯
 `module-federation` 같은 경우 웹팩이 선두주자인거 같은데 그냥 웹팩 쓸까....
 
-`shared` 옵션에 별개 다 있음. 그거 이해를 못하겟는데 그것부터 이해해야될 듯
+아니 vite 플러그인은 `shared` 옵션 몇개는 지원 안하는 듯?? eager 옵션에 대한 코드가 없네....
 
 ## Trouble shooting
 1. 호스트 컨테이너 빌드시에 `shared`의 `react` 라이브러리 경로를 잘못 찾아감

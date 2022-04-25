@@ -24,14 +24,17 @@ export default defineConfig({
       },
       shared: {
         "react": {
-          version: "18.0.0"
+          version: "^18.0.0"
         },
         "react-dom": {
-          version: "18.0.0"
+          version: "^18.0.0"
         },
         "react-router-dom": {
-          version: "6.3.0"
-        }
+          version: "^6.3.0"
+        },
+        "@mui/material": {
+          version: "^5.6.2"
+        },
       }
     })
   ],

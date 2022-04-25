@@ -13,7 +13,7 @@ export default defineConfig({
         './SignIn': './src/page/SignIn.tsx',
         './SignUp': './src/page/SignUp.tsx',
       },
-      shared: ["react", "react-dom"]
+      shared: ["react", "react-dom", "react-router-dom", "@mui/material"]
     })
   ],
   build: {
