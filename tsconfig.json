@@ -12,12 +12,18 @@
     "module": "ESNext",
     "moduleResolution": "Node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "noEmit": true,
     "jsx": "react-jsx",
   },
   "include": [
-    "packages/**/src"
+    "packages/src/*",
   ],
-  "references": [{ "path": "./tsconfig.node.json"}]
+  "ts-node": {
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "es5",
+      "esModuleInterop": true,
+    },
+  }
 }

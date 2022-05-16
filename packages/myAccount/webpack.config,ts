@@ -1,0 +1,46 @@
+import * as path from 'path';
+import * as webpack from 'webpack';
+import HtmlWebpackPlugin from 'html-webpack-plugin'
+import 'webpack-dev-server'
+
+const config: webpack.Configuration = {
+  entry: './src/index',
+  mode: 'development',
+  devServer: {
+    static: {
+      directory: path.join(__dirname, 'dist'),
+    },
+    port: 3000,
+  },
+  output: {
+    publicPath: 'auto',
+  },
+  resolve: {
+    extensions: ['.ts', '.tsx', '.js'],
+  },
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        loader: 'esbuild-loader',
+        options: {
+          loader: 'tsx',
+          target: 'es2015'
+        },
+      },
+    ],
+  },
+  plugins: [
+    new webpack.container.ModuleFederationPlugin({
+      name: 'registration',
+      exposes: {
+        './App': "./src/App"
+      },
+    }),
+    new HtmlWebpackPlugin({
+      template: './public/index.html',
+    }),
+  ],
+};
+
+export default config

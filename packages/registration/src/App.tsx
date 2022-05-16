@@ -1,15 +1,11 @@
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import SignIn from './page/SignIn';
-import SignUp from './page/SignUp';
+import * as React from 'react'
+import { Link } from 'react-router-dom';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path={'/signIn'} element={<SignIn />} />
-        <Route path={'/signUp'} element={<SignUp />} />
-      </Routes>
-    </Router>
+    <div className="App">
+      <div>remote-app2</div>
+    </div>
   );
 }
 

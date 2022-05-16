@@ -1,29 +1,29 @@
 
-:
-
-.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
-=
-tsconfig.json,6\1\61ebb9fd6e8cf9082658121d5d81e297791dacd0
-B
-tsconfig.node.json,c\d\cd346bdc6f8eee39e4d280aa9a6f7949c2133a71
-:
-
-lerna.json,2\9\2926e31759d58eacb6eac3337a2c8d1f6ccd9f21
-O
-packages/container/src/main.tsx,e\4\e42671a8f9ddc9fad60efdfbc1371cc5a220f663
-O
-packages/myAccount/src/main.tsx,6\0\60aa4413bb351a7107bd4986b002aa50dfb8e1d3
-M
-packages/landing/src/main.tsx,8\a\8aa635a8eb383914d63e6aa458c60f1bcff6b489
-R
-"packages/landing/src/vite-env.d.ts,a\a\aa6eb47bcbcac357775e11faa680a87ae1b79f4b
-M
-packages/container/index.html,f\f\ffb6d3516baeacfc86e9131f34954f5934771d1d
-O
-packages/container/package.json,e\c\ec34fe28c2be2a006a9e9f626e82f37ab116afc5
-O
-packages/myAccount/package.json,5\2\52637381f7a19cdee1f2799821c4941f1af47511
-P
- packages/registration/index.html,a\1\a19350f75241196a9ea44b99224dfda917a3b956
+?
+.pnp.loader.mjs,7\a\7ad03ee4dee8d76a46a648e5949c805b5452d4bf
+@
+.prettierrc.json,1\e\1ee5d199ddbeaaa1717e65b449ac7a6f03bed689
+T
+$packages/container/public/index.html,e\7\e7a7b1f4528d362aadbefbd5542076cc99c75e04
+9
+	yarn.lock,5\3\53585a096fe3a3b96321113856ae62602995a33b
+T
+$packages/myAccount/public/index.html,1\1\1129e4ce1a1affc4ba753b08531957fdb59ea0c8
+W
+'packages/registration/public/index.html,9\2\9227b223705b25dbeb57fb1cbbd8ff5ba1beebc1
+T
+$packages/myAccount/webpack.config,ts,d\7\d7004e32f8d4095046690807e8b11ce482048a7b
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+;
+.yarnrc.yml,9\d\9da6c3f8f0ef45beafba161d8dd084500ea7d884
 R
 "packages/registration/package.json,9\e\9e88f63330fcf521c05bc2be3aba0ba37807fadc
+R
+"packages/container/src/remote.d.ts,b\2\b25414357bdc40ef3ea72280ed9ecaf05defd666
+R
+"packages/landing/public/index.html,9\c\9ced8b63ceaf159438c41c68ffd9f30f70c7bb42
+P
+ packages/container/src/index.tsx,7\6\7674a86e99f5a5f969d2ff8c5a8668b8826e48a0
+T
+$packages/container/src/bootstrap.tsx,f\7\f7ef57c822ee2db91720ae188ff2f0f29b426450
