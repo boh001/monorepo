@@ -33,6 +33,8 @@ RUN yarn workspace landing run build
 
 FROM nginx:stable
 
+RUN rm /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/conf.d
 COPY --from=build-container /usr/src/myapp/packages/container/dist /usr/share/nginx/html/container/latest
 COPY --from=build-landing /usr/src/myapp/packages/landing/dist /usr/share/nginx/html/landing/latest
 CMD nginx -g 'daemon off;'

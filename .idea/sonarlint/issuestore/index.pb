@@ -27,3 +27,16 @@ P
  packages/container/src/index.tsx,7\6\7674a86e99f5a5f969d2ff8c5a8668b8826e48a0
 T
 $packages/container/src/bootstrap.tsx,f\7\f7ef57c822ee2db91720ae188ff2f0f29b426450
+O
+packages/myAccount/package.json,5\2\52637381f7a19cdee1f2799821c4941f1af47511
+=
+.dockerignore,0\5\05a721ebe3ba0754116825ed1359ff1785f4bbac
+b
+2packages/container/config/webpack.config.common.ts,9\2\92d6018585d5d8e90d94f8d189a1a05f0768733d
+`
+0packages/landing/config/webpack.config.common.ts,0\c\0cc229344df4687afe9b2ee9cf0a77df5d6483fd
+_
+/packages/container/config/webpack.config.dev.ts,6\e\6ea4f6a230eeb3540af8164dfb23dc335ec0a079
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302

@@ -16,7 +16,7 @@ const config: webpack.Configuration = {
     new webpack.container.ModuleFederationPlugin({
       name: 'container',
       remotes: {
-        landing: "landing@http://localhost:80/landing/latest/remoteEntry.js"
+        landing: "landing@http://localhost:8000/landing/latest/remoteEntry.js"
       },
       shared: Object.fromEntries(Object.entries(pkg.dependencies).map(deps => ([
         [deps[0]], {
