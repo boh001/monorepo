@@ -8,7 +8,7 @@ import commonConfig from "./webpack.config.common"
 const config: webpack.Configuration = {
   mode: 'production',
   output: {
-    chunkFilename: '[contenthash].js',
+    chunkFilename: 'name.[contenthash].js',
     clean: true,
     publicPath: '/container/latest/',
   },

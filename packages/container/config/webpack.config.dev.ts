@@ -16,7 +16,7 @@ const config: webpack.Configuration = {
     port: PORT,
   },
   output: {
-    chunkFilename: '[contenthash].js',
+    chunkFilename: 'name.[contenthash].js',
     clean: true,
     publicPath: `http://localhost:${PORT}/`,
   },

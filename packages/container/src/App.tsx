@@ -1,5 +1,11 @@
 import * as React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import {
+  unstable_HistoryRouter as Router,
+  Routes,
+  Route,
+  Link,
+} from 'react-router-dom';
+import { createBrowserHistory } from 'history';
 import MenuAppBar from './components/MenuAppBar';
 // @ts-ignore
 const Landing = React.lazy(() => import('landing/App'));
@@ -10,9 +16,11 @@ const Landing = React.lazy(() => import('landing/App'));
 // // @ts-ignore
 // const SignUp = React.lazy(() => import('registration/SignUp'));
 
+const history = createBrowserHistory({ window });
+
 function App() {
   return (
-    <Router>
+    <Router history={history}>
       <MenuAppBar />
       <React.Suspense fallback={'loading...'}>
         <Routes>

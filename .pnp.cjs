@@ -69,6 +69,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.14.0"],\
             ["eslint-config-prettier", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:8.5.0"],\
             ["eslint-plugin-prettier", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:4.0.0"],\
+            ["history", "npm:5.3.0"],\
             ["html-webpack-plugin", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:5.5.0"],\
             ["prettier", "npm:2.6.2"],\
             ["react", "npm:18.0.0"],\
@@ -3753,6 +3754,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/webpack", "npm:5.28.0"],\
             ["babel-loader", "virtual:34040f9675679c464d872053f4ec6d021a996774b7961917725bd92919823a0350fab7f4bdce88aa049754788568b5e940b1cd4ec14192bd056c2200d72ce48a#npm:8.2.5"],\
             ["clean-webpack-plugin", "virtual:34040f9675679c464d872053f4ec6d021a996774b7961917725bd92919823a0350fab7f4bdce88aa049754788568b5e940b1cd4ec14192bd056c2200d72ce48a#npm:4.0.0"],\
+            ["history", "npm:5.3.0"],\
             ["html-webpack-plugin", "virtual:34040f9675679c464d872053f4ec6d021a996774b7961917725bd92919823a0350fab7f4bdce88aa049754788568b5e940b1cd4ec14192bd056c2200d72ce48a#npm:5.5.0"],\
             ["react", "npm:18.0.0"],\
             ["react-dom", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:18.0.0"],\
@@ -6171,7 +6173,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react", "npm:18.0.0"],\
             ["react-dom", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:18.0.0"],\
             ["react-router-dom", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:6.3.0"],\
-            ["serve", "npm:13.0.2"],\
             ["ts-node", "virtual:34040f9675679c464d872053f4ec6d021a996774b7961917725bd92919823a0350fab7f4bdce88aa049754788568b5e940b1cd4ec14192bd056c2200d72ce48a#npm:10.7.0"],\
             ["typescript", "patch:typescript@npm%3A4.6.3#~builtin<compat/typescript>::version=4.6.3&hash=bda367"],\
             ["webpack", "virtual:16d462ecd201df1e9242a5325c64f6b1d184e4e5e5c0ccce531e3f0116f4d41aa2a32a4a7e490886d7e25193c91289f20764712151e9f406951fe13ce34cf059#npm:5.72.0"],\
@@ -7739,6 +7740,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint", "npm:8.14.0"],\
             ["eslint-config-prettier", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:8.5.0"],\
             ["eslint-plugin-prettier", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:4.0.0"],\
+            ["history", "npm:5.3.0"],\
             ["html-webpack-plugin", "virtual:36a01d8083315b8a6e8362097258ea8bc0f9dfb672cb210742e054760850c673a1038f542a6b7156397b5275ace8ee0482231cac5e8898044fa1a1c29f78ee5b#npm:5.5.0"],\
             ["prettier", "npm:2.6.2"],\
             ["react", "npm:18.0.0"],\

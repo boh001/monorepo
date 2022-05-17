@@ -8,7 +8,7 @@ import pkg from "../package.json"
 const config: webpack.Configuration = {
   mode: 'production',
   output: {
-    chunkFilename: '[contenthash].js',
+    chunkFilename: 'name.[contenthash].js',
     clean: true,
     publicPath: '/landing/latest/',
   },

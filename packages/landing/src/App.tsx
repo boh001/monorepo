@@ -1,11 +1,12 @@
-import * as React from 'react'
-import { Link } from 'react-router-dom';
+import * as React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import Album from '../components/Album';
 
 function App() {
   return (
-    <div className="App">
-      <div>remote-app2</div>
-    </div>
+    <Routes>
+      <Route path={'/'} element={<Album />} />
+    </Routes>
   );
 }
 
