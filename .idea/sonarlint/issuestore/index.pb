@@ -7,14 +7,10 @@ T
 $packages/container/public/index.html,e\7\e7a7b1f4528d362aadbefbd5542076cc99c75e04
 T
 $packages/myAccount/public/index.html,1\1\1129e4ce1a1affc4ba753b08531957fdb59ea0c8
-W
-'packages/registration/public/index.html,9\2\9227b223705b25dbeb57fb1cbbd8ff5ba1beebc1
 T
 $packages/myAccount/webpack.config,ts,d\7\d7004e32f8d4095046690807e8b11ce482048a7b
 ;
 .yarnrc.yml,9\d\9da6c3f8f0ef45beafba161d8dd084500ea7d884
-R
-"packages/registration/package.json,9\e\9e88f63330fcf521c05bc2be3aba0ba37807fadc
 R
 "packages/landing/public/index.html,9\c\9ced8b63ceaf159438c41c68ffd9f30f70c7bb42
 O

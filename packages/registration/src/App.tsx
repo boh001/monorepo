@@ -1,10 +1,17 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom';
+import { Route, Routes, Link } from "react-router-dom";
+import Signin from "./pages/Signin";
+import Signup from "./pages/Signup";
 
 function App() {
   return (
-    <div className="App">
-      <div>remote-app2</div>
+    <div>
+      <Link to={'/signin'}>signin</Link>
+      <Link to={'/signup'}>signup</Link>
+      <Routes>
+        <Route path="signin" element={<Signin />} />
+        <Route path="signup" element={<Signup />} />
+      </Routes>
     </div>
   );
 }

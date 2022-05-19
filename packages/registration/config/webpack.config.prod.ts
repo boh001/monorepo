@@ -1,31 +1,23 @@
 import * as path from 'path';
 import * as webpack from 'webpack';
 import 'webpack-dev-server'
-import pkg from "../package.json"
 import merge from "webpack-merge";
 import commonConfig from "./webpack.config.common"
-
-const PORT = 3000
+import pkg from "../package.json"
 
 const config: webpack.Configuration = {
-  mode: 'development',
-  devServer: {
-    static: {
-      directory: path.join(__dirname, 'dist'),
-    },
-    port: PORT,
-  },
+  mode: 'production',
   output: {
     chunkFilename: 'name.[contenthash].js',
     clean: true,
-    publicPath: `http://localhost:${PORT}/`,
+    publicPath: '/registration/latest/',
   },
   plugins: [
     new webpack.container.ModuleFederationPlugin({
-      name: 'container',
-      remotes: {
-        landing: "landing@http://localhost:3001/remoteEntry.js",
-        registration: "registration@http://localhost:3002/remoteEntry.js",
+      name: 'registration',
+      filename: 'remoteEntry.js',
+      exposes: {
+        './App': "./src/App"
       },
       shared: Object.fromEntries(Object.entries(pkg.dependencies).map(deps => ([
         [deps[0]], {
@@ -34,8 +26,7 @@ const config: webpack.Configuration = {
           requiredVersion: deps[1]
         }
       ])))
-    }),
-  ],
+    })],
 };
 
 export default merge(config, commonConfig)

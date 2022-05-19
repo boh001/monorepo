@@ -3,3 +3,9 @@ declare module 'landing/App' {
 
   export default Landing;
 }
+
+declare module 'registartion/App' {
+  const Registration: React.ComponentType;
+
+  export default Registration;
+}

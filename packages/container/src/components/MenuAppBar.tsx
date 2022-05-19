@@ -47,7 +47,7 @@ export default function MenuAppBar() {
             ) : (
               <>
                 <Link
-                  to={'/signup'}
+                  to={'/registration/signup'}
                   style={{
                     color: 'inherit',
                     textDecoration: 'none',
@@ -57,7 +57,7 @@ export default function MenuAppBar() {
                   회원가입
                 </Link>
                 <Link
-                  to={'/signin'}
+                  to={'/registration/signin'}
                   style={{
                     color: 'inherit',
                     textDecoration: 'none',

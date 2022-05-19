@@ -3,9 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "scripts": {
-    "dev": "webpack-cli serve",
-    "build": "webpack --mode production",
-    "serve": "yarn run build && serve dist -p 8081",
+    "dev": "webpack serve --config ./config/webpack.config.dev.ts",
+    "build": "webpack --config ./config/webpack.config.prod.ts",
+    "serve": "yarn run build && serve dist -p 8000",
     "clean": "rm -rf dist",
     "prettier": "prettier --write src"
   },
@@ -19,20 +19,21 @@
     "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
+    "@babel/preset-react": "^7.16.7",
+    "@babel/preset-typescript": "^7.16.7",
     "@types/node": "^17.0.31",
     "@types/react": "^18.0.0",
     "@types/react-dom": "^18.0.0",
     "@types/webpack": "^5.28.0",
     "babel-loader": "^8.2.5",
     "clean-webpack-plugin": "^4.0.0",
-    "esbuild-loader": "^2.18.0",
     "html-webpack-plugin": "^5.5.0",
-    "serve": "^13.0.2",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.3",
     "webpack": "^5.72.0",
     "webpack-cli": "^4.9.2",
-    "webpack-dev-server": "^4.8.1"
+    "webpack-dev-server": "^4.8.1",
+    "webpack-merge": "^5.8.0"
   },
   "packageManager": "yarn@3.2.0"
 }
